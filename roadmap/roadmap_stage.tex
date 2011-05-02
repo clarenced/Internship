@@ -1,0 +1,21 @@
+\documentclass[a4paper,oneside,12pt]{article}
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\pagestyle{headings}
+
+\title{Edition de modèles en mode multi-vues dans un contexte distribué et déconnecté}
+\author{Charles Clarence Dimitri}
+\date \today
+
+\begin{document}
+\maketitle
+
+MoVe et Regal, 2 équipes du LIP6 ont initié une collaboration sur le sujet de l'édition coopérative de modèles UML. MoVe développe l'éditeur de modèles réparti D-Praxis et souhaitait porter cet éditeur sur l'intergiciel Telex.
+
+L'originalité de D-Praxis est qu'en plus de permettre aux développeurs de travailler de manière collaborative sur des modèles, il assure la cohérence entre ces derniers. Les règles vérifiés sont de nature structurelle, par exemple : s'assurer que chaque opération dans un diagramme de séquence existen bien dans le diagramme de classes, pas de cycle de dépendance entre packages, etc. Etant donné que les développeurs travaillent tous sur le même modèle, ils sont susceptibles de rompre certaines de ces règles à tout moment.
+ 
+L'intergiciel Telex est lui aussi destiné aux applications de travail coopératif au sens large, i.e., il n'est pas réservé à un type de document donné. Il permet à des utilisateurs, répartis sur le réseau de partager des documents en mode optimiste. Le point fort de Telex, en plus de la gestion de la répartitiond de la cohérence entre documents, c'est la possibilité de travailler en mode non-connecté. Cette fonctionnalité reflète au mieux la réalité des projets logiciels et répond à un vrai besoin des développeurs aujourd'hui. Les développeurs peuvent ainsi travailler chacun de leusrs cotés puis se reconnecter et soumettre à Telex. Ce dernier se charge alors de trouver un consensus et converge vers un modèle compatible entre tous les développeurs.
+
+Comme il a été dit à l'introduction, l'objectif du stage sera de porter D-Praxis sur Telex. Ceci se fera en 3 étapes. La première étape consistera en la prise en main de Telex. Une version light de Telex appelée TelexLightServer fournit une API HTTP permettant à un client d'interagir avec le serveur Telex. Cette étape a déjà réalisée en une semaine. La deuxième étape se concentrera sur le portage de D-Praxis sur Telex en faisant de la réplication totale de documents UML. Cette étape est en cours. Il faudra en outre gérer la cohérence du modèle, sa consistence, les conflits dans un contexte réparti. Ensuite, la 3ème portera sur la réplication partielle de documents UML, qui représente l'objectif final de ce stage. 
+\end{document}
