@@ -1,0 +1,159 @@
+\documentclass[a4paper,oneside,12pt]{article}
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{url}
+\usepackage{amsmath}
+%\usepackage[T1]{fontenc}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{color}
+%\usepackage{pifont}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{0,0.5,1}
+\definecolor{colString}{rgb}{0.6,0.1,0.1}
+
+\lstset{
+basicstyle=\ttfamily\small, %
+identifierstyle=\color{colIdentifier}, %
+keywordstyle=\color{colKeys}, %
+stringstyle=\color{colString}, %
+commentstyle=\color{colComments},
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,                   % adds a frame around the code
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+title=\lstname,                 % show the filename of files included with \lstinputlisting; also try caption instead of title
+escapeinside={\%*}{*} ,         % if you want to add a comment within your code
+morecomment=[s]{/*}{*/}
+}
+\lstset{language=java}
+\lstset{
+basicstyle=\ttfamily\small, %
+identifierstyle=\color{colIdentifier}, %
+keywordstyle=\color{colKeys}, %
+stringstyle=\color{colString}, %
+commentstyle=\color{colComments},
+numbers=left,                   % where to put the line-numbers
+numberstyle=\footnotesize,      % the size of the fonts that are used for the line-numbers
+stepnumber=1,                   % the step between two line-numbers. If it's 1 each line will be numbered
+numbersep=5pt,                  % how far the line-numbers are from the code
+showspaces=false,               % show spaces adding particular underscores
+showstringspaces=false,         % underline spaces within strings
+showtabs=false,                 % show tabs within strings adding particular underscores
+frame=single,                   % adds a frame around the code
+tabsize=2,                      % sets default tabsize to 2 spaces
+captionpos=b,                   % sets the caption-position to bottom
+breaklines=true,                % sets automatic line breaking
+breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+title=\lstname,                 % show the filename of files included with \lstinputlisting; also try caption instead of title
+escapeinside={\%*}{*)} ,         % if you want to add a comment within your code
+morecomment=[s]{/*}{*/}
+}
+\lstset{language=java}
+
+
+%% Creation d'un format pour le titre
+\makeatletter
+\def\maketitle{%
+  \thispagestyle{empty}\vbox to \vsize{%
+    \vfill
+    \vspace{1cm}
+    \begin{flushleft}
+      \usefont{OT1}{ptm}{m}{n}
+      \huge \@title
+    \end{flushleft}
+    \par
+    \hrule height 4pt
+    \par
+    \begin{flushright}
+      \usefont{OT1}{phv}{m}{n}
+      \Large \@author
+      \par
+    \end{flushright}
+    \vspace{1cm}
+    \vfill
+    \vfill
+    \bf{Le \@date}
+  }%
+  \cleardoublepage
+}
+
+
+
+% On definit le symbole IN
+\def\N{\mbox{I\hspace{-.15em}N}}
+
+%%% francisation des algorithmes
+%\renewcommand{\algorithmicrequire} {\textbf{\textsc{Entrées:}}}
+%\renewcommand{\algorithmicensure}  {\textbf{\textsc{Sorties:}}}
+%\renewcommand{\algorithmicwhile}   {\textbf{tantque}}
+%\renewcommand{\algorithmicdo}      {\textbf{faire}}
+%\renewcommand{\algorithmicendwhile}{\textbf{fin tantque}}
+%\renewcommand{\algorithmicend}     {\textbf{fin}}
+%\renewcommand{\algorithmicif}      {\textbf{si}}
+%\renewcommand{\algorithmicendif}   {\textbf{finsi}}
+%\renewcommand{\algorithmicelse}    {\textbf{sinon}}
+%\renewcommand{\algorithmicthen}    {\textbf{alors}}
+%\renewcommand{\algorithmicfor}     {\textbf{pour}}
+%\renewcommand{\algorithmicforall}  {\textbf{pour tout}}
+%\renewcommand{\algorithmicdo}      {\textbf{faire}}
+%\renewcommand{\algorithmicendfor}  {\textbf{fin pour}}
+%\renewcommand{\algorithmicloop}    {\textbf{boucler}}
+%\renewcommand{\algorithmicendloop} {\textbf{fin boucle}}
+%\renewcommand{\algorithmicrepeat}  {\textbf{répéter}}
+%\renewcommand{\algorithmicuntil}   {\textbf{jusqu'à}}
+
+
+% Césures
+\hyphenation{meta-don-nees}
+
+
+% Inclusion du dossier des figures
+\graphicspath{{./figures/}}
+
+
+
+% Inclusion du dossier des figures
+\graphicspath{{./figures/}}
+
+
+\title{Edition }
+\author{CHARLES Clarence Dimitri}
+\begin{document}
+
+\maketitle
+
+
+Ceci est un test. Je veux voir si ca marche en effet.
+\tableofcontents
+\cleardoublepage
+
+
+%\bibliographystyle{alpha}
+%\bibliography{biblio}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
